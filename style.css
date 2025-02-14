@@ -20,6 +20,12 @@ body {
   text-align: center;
   line-height: 2;
 }
+.buttonedit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
 
 button {
   color: white;
@@ -27,7 +33,6 @@ button {
   font-size: 16px;
   border: none;
   border-radius: 8px;
-  gap: 20px;
 }
 .button1 {
   background-color: greenyellow;

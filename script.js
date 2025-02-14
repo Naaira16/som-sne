@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const photo = document.querySelector(".photo");
   const title = document.querySelector("h1");
   let scaleValue = 1;
-  const BUTTON_MARGIN = 37;
+  const BUTTON_MARGIN = 30;
   let clickCount = 0;
 
-  const noButtonTexts = ["No", "No", "No", "No", "No!!!"];
+  const noButtonTexts = ["No", "No", "No", "No", "No", "No!!!"];
 
   noButton.addEventListener("click", function () {
     clickCount++;
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentTextIndex = clickCount % noButtonTexts.length;
     noButton.textContent = noButtonTexts[currentTextIndex];
 
-    scaleValue *= 1.6;
+    scaleValue *= 1.5;
     okayButton.style.transform = `scale(${scaleValue})`;
 
     const newMargin = BUTTON_MARGIN * scaleValue;
@@ -43,10 +43,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (clickCount >= 4) {
       photo.src = "img/sad-without-you.gif";
-      title.textContent = "Hik Hik!!!";
+      title.textContent = "Hik Hik Mnus akk!!!";
       okayButton.textContent = "Yes";
     }
     if (clickCount >= 5) {
+      photo.src = "img/sad-without-you.gif";
+      title.textContent = "Huh jam mer.";
+      okayButton.textContent = "Yes";
+    }
+    if (clickCount >= 6) {
       photo.src = "img/haha.gif";
       title.textContent = "no no tv, nh nv luj sl tmd.";
       photo.style.transform = "none";
