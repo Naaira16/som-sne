@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(5, 5, 5);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: pink;
+}
+
+.container {
+  text-align: center;
+  line-height: 2;
+}
+
+button {
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  gap: 20px;
+}
+.button1 {
+  background-color: greenyellow;
+  transition: tranform 0.5s ease;
+}
+.button2 {
+  background-color: red;
+}
+
+.photo {
+  display: center;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
