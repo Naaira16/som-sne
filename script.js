@@ -73,3 +73,16 @@ document.addEventListener("DOMContentLoaded", function () {
     okayButton.style.display = "none";
   });
 });
+document.querySelector(".button1").addEventListener("click", function () {
+  gtag("event", "click", {
+    event_category: "Button",
+    event_label: "Okay Button Clicked",
+  });
+});
+
+document.querySelector(".button2").addEventListener("click", function () {
+  gtag("event", "click", {
+    event_category: "Button",
+    event_label: "No Button Clicked",
+  });
+});
