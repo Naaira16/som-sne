@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
       okayButton.style.zIndex = "100";
       noButton.style.position = "absolute";
       noButton.style.bottom = "1400px";
-      noButton.style.right = "1300px";
+      noButton.style.right = "13000px";
     }
     if (clickCount >= 6) {
       photo.src = "img/haha.gif";
