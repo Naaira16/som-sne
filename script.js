@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       okayButton.style.transform = `scale(${scaleValue})`;
       okayButton.style.zIndex = "100";
       noButton.style.position = "absolute";
-      noButton.style.bottom = "0px";
+      noButton.style.bottom = "16%";
     }
     if (clickCount >= 6) {
       photo.src = "img/haha.gif";
