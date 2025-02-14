@@ -73,16 +73,21 @@ document.addEventListener("DOMContentLoaded", function () {
     okayButton.style.display = "none";
   });
 });
-document.querySelector(".button1").addEventListener("click", function () {
-  gtag("event", "click", {
-    event_category: "Button",
-    event_label: "Okay Button Clicked",
-  });
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const noButton = document.querySelector(".button2");
+  const okayButton = document.querySelector(".button1");
 
-document.querySelector(".button2").addEventListener("click", function () {
-  gtag("event", "click", {
-    event_category: "Button",
-    event_label: "No Button Clicked",
+  noButton.addEventListener("click", function () {
+    gtag("event", "click", {
+      event_category: "Button",
+      event_label: "No Button Clicked",
+    });
+  });
+
+  okayButton.addEventListener("click", function () {
+    gtag("event", "click", {
+      event_category: "Button",
+      event_label: "Okay Button Clicked",
+    });
   });
 });
