@@ -29,17 +29,17 @@ document.addEventListener("DOMContentLoaded", function () {
     title.style.transform = `translateY(-${photoAndTitleDistance}px)`;
 
     if (clickCount >= 1) {
-      title.textContent = "Tah tix kor ban dars";
+      title.textContent = "Tah tix kor ban dars tv, nor!!!";
       okayButton.textContent = "Yes";
     }
     if (clickCount >= 2) {
-      title.textContent = "Prom Pleam!!";
-      photo.src = "img/sad.gif";
+      title.textContent = "Hue, Prom Pleam!!";
+      photo.src = "img/peach-goma.gif";
       okayButton.textContent = "Yes";
     }
     if (clickCount >= 3) {
-      title.textContent = "Yum lov hz!!";
-      okayButton.textContent = "Yes";
+      title.textContent = "Yum lov hz, Jam mer";
+      photo.src = "img/sad.gif";
     }
     if (clickCount >= 4) {
       photo.src = "img/sad-without-you.gif";
@@ -47,13 +47,17 @@ document.addEventListener("DOMContentLoaded", function () {
       okayButton.textContent = "Yes";
     }
     if (clickCount >= 5) {
-      photo.src = "img/sad-without-you.gif";
-      title.textContent = "Huh jam mer.";
+      title.textContent = "Huh jam mer hah Hikk Hikkk.";
       okayButton.textContent = "Yes";
     }
     if (clickCount >= 6) {
+      photo.src = "img/sad.2.gif";
+      title.textContent = "ot ahnit knea eyy tix ehh?";
+      okayButton.textContent = "Yes";
+    }
+    if (clickCount >= 7) {
       photo.src = "img/haha.gif";
-      title.textContent = "no no tv, nh nv luj sl tmd.";
+      title.textContent = "Hue! no no tv, nh nv luj sl yg tmd.";
       photo.style.transform = "none";
       title.style.transform = "none";
       noButton.style.display = "none";
@@ -62,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   okayButton.addEventListener("click", function () {
     photo.src = "img/hug.gif";
-    title.textContent = "Awwww I luv u cutie.<3";
+    title.textContent = "Men ehh?? ouyyy kur oy sl mles cutie.<3";
     photo.style.transform = "none";
     title.style.transform = "none";
     noButton.style.display = "none";
