@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
       okayButton.textContent = "Yes";
     }
     if (clickCount >= 5) {
-      okayButton.style.width = "150px";
-      okayButton.style.height = "150px";
+      okayButton.style.width = "100px";
+      okayButton.style.height = "100px";
       okayButton.style.fontSize = "5px";
       okayButton.textContent = "Okay!!!";
       okayButton.style.position = "absolute";
@@ -58,8 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       okayButton.style.transform = `scale(${scaleValue})`;
       okayButton.style.zIndex = "100";
       noButton.style.position = "absolute";
-      noButton.style.bottom = "1400px";
-      noButton.style.right = "3300px";
+      noButton.style.bottom = "0px";
     }
     if (clickCount >= 6) {
       photo.src = "img/haha.gif";
