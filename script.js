@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const BUTTON_MARGIN = 37;
   let clickCount = 0;
 
-  const noButtonTexts = ["No", "No", "No", "No", "No!!!", "Ot?"];
+  const noButtonTexts = ["No", "No", "No", "No", "No!!!"];
 
   noButton.addEventListener("click", function () {
     clickCount++;
@@ -47,22 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
       okayButton.textContent = "Yes";
     }
     if (clickCount >= 5) {
-      okayButton.style.width = "100px";
-      okayButton.style.height = "100px";
-      okayButton.style.fontSize = "5px";
-      okayButton.textContent = "Okay!!!";
-      okayButton.style.position = "absolute";
-      okayButton.style.top = "50%";
-      okayButton.style.left = "50%";
-      okayButton.style.transform = "translate(-50%, -50%)";
-      okayButton.style.transform = `scale(${scaleValue})`;
-      okayButton.style.zIndex = "100";
-      noButton.style.position = "absolute";
-      noButton.style.bottom = "40%";
-    }
-    if (clickCount >= 6) {
       photo.src = "img/haha.gif";
-      title.textContent = "ot ot tv, nh nv luj sl tmd.";
+      title.textContent = "no no tv, nh nv luj sl tmd.";
       photo.style.transform = "none";
       title.style.transform = "none";
       noButton.style.display = "none";

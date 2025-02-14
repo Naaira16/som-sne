@@ -43,3 +43,6 @@ button {
   align-items: center;
   width: 200px;
 }
+html {
+  zoom: 100%;
+}
